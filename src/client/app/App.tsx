@@ -5,6 +5,7 @@
 
 import type { EmptyObject } from '@flex-development/tutils'
 import { Layout } from '@glyphink/website/theme'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { StrictMode, type FC, type JSX } from 'react'
 
 /**
@@ -21,6 +22,7 @@ const App: FC<EmptyObject> = (): JSX.Element => {
       <Layout>
         {null}
       </Layout>
+      <SpeedInsights />
     </StrictMode>
   )
 }

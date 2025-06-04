@@ -65,6 +65,7 @@
   "dependencies": {
     "@flex-development/log": "5.0.0-alpha.2",
     "@flex-development/tutils": "6.0.0-alpha.25",
+    "@vercel/speed-insights": "1.2.0",
     "classnames": "2.5.1",
     "weak-key": "1.0.3"
   },
