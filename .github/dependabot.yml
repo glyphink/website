@@ -1,0 +1,54 @@
+# Dependabot Configuration
+#
+# References:
+#
+# - https://docs.github.com/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates
+
+---
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    commit-message:
+      prefix: ci
+      include: scope
+    directory: /
+    labels:
+      - scope:dependencies
+      - type:ci
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    commit-message:
+      prefix: build
+      include: scope
+    directory: /
+    groups:
+      commitlint:
+        patterns:
+          - '@commitlint/*'
+      flex-development:
+        patterns:
+          - '@flex-development/*'
+      html-eslint:
+        patterns:
+          - '@html-eslint/*'
+      remark:
+        patterns:
+          - 'remark-*'
+          - remark
+      testing-library:
+        patterns:
+          - '@testing-library/*'
+      vercel:
+        patterns:
+          - '@vercel/*'
+          - vercel
+      vitest:
+        patterns:
+          - '@vitest/*'
+          - vitest
+    labels:
+      - scope:dependencies
+      - type:build
+    schedule:
+      interval: daily

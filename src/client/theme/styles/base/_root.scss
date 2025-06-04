@@ -1,0 +1,98 @@
+/* -----------------------------------------------------------------------------
+ROOT
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+COLORS: SOLID
+------------------------------------------------------------------------------*/
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-charcoal: #231f20;
+  --color-linen: #ece4d5;
+
+  --color-cream: #faf0e0;
+  --color-green: #68861d;
+  --color-navy: #182d3b;
+  --color-orange: #de460b;
+
+  --color-brown: #8e4a06;
+  --color-gold: #ffa500;
+  --color-greenish: #7b9933;
+  --color-navyish: #2d4454;
+  --color-orangeish: #ed561c;
+  --color-tan: #eccea0;
+  --color-taupe: #c6b6a1;
+
+  --color-neutral: var(--color-charcoal);
+  --color-neutral-inverse: var(--color-white);
+}
+
+/* -----------------------------------------------------------------------------
+COLORS: BACKGROUND
+
+- `bg`: primary background color
+- `bg-alt`: alternative background color used for larger elements
+- `bg-elv`: used for "floating" components
+- `bg-soft`: used to slightly distinguish components from main page
+------------------------------------------------------------------------------*/
+:root {
+  --color-bg: var(--color-cream);
+}
+
+/* -----------------------------------------------------------------------------
+COLORS: BORDERS
+
+- `border`: interactive component borders (e.g. button outlines).
+- `divider`: separators.
+- `gutter`: borders that divide components on a page (e.g. the header and the
+  rest of the page)
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+COLORS: TEXT
+
+- `text-1`: primary text color
+- `text-2`: muted texts (e.g. info text, inactive menus)
+- `text-3`: subtle texts (e.g. caret icon, placeholders)
+------------------------------------------------------------------------------*/
+:root {
+  --color-text-1: var(--color-navy);
+}
+
+/* -----------------------------------------------------------------------------
+COLORS: FUNCTIONAL
+
+ - `brand`: primary brand colors, (e.g. link text, themed buttons)
+ - `danger`: draw attention to danger messages
+ - `default`: used without special meaning
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+TYPOGRAPHY
+------------------------------------------------------------------------------*/
+:root {
+  --font-family-base: 'Outfit', sans-serif;
+  --font-family-logo: 'Kablammo', system-ui;
+}
+
+/* -----------------------------------------------------------------------------
+SHADOWS
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+Z-INDICES
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+ICONS
+------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------
+LAYOUT
+------------------------------------------------------------------------------*/
+:root {
+  --layout-max-width: 1440px;
+  --nested-padding-left: 16px;
+}

@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:theme/components/atoms/Layout > should render <div> 1`] = `
+<div
+  class="layout"
+>
+  <div
+    class="content"
+    id="content"
+  />
+</div>
+`;

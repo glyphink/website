@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "vite build",
+  "cleanUrls": true,
+  "crons": [],
+  "devCommand": null,
+  "framework": null,
+  "git": { "deploymentEnabled": false },
+  "headers": [],
+  "ignoreCommand": null,
+  "installCommand": "yarn --no-immutable",
+  "outputDirectory": "dist",
+  "public": false,
+  "redirects": [],
+  "rewrites": [],
+  "trailingSlash": false
+}

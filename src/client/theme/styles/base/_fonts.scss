@@ -1,0 +1,15 @@
+/* -----------------------------------------------------------------------------
+FONTS
+https://developer.mozilla.org/docs/Web/CSS/CSS_fonts/Variable_fonts_guide
+https://fonts.google.com/specimen/Outfit
+------------------------------------------------------------------------------*/
+
+@font-face {
+  font-display: 'swap';
+  font-family: 'Outfit';
+  font-optical-sizing: auto;
+  font-named-instance: 'Regular';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../assets/fonts/Outfit.woff2') format('woff2');
+}

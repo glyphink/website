@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "customConditions": ["development"],
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedModules": true,
+    "jsx": "react-jsxdev",
+    "lib": ["es2024", "dom", "dom.iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "newLine": "lf",
+    "noEmit": true,
+    "noErrorTruncation": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedSideEffectImports": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "verbatimModuleSyntax": true
+  },
+  "exclude": ["coverage", "dist", "node_modules"],
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "include": ["**/**.json", "**/**.mjs", "**/**.mts", "**/**.ts", "**/**.tsx"],
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules",
+      "options": {
+        "classnameTransform": "camelCase",
+        "customMatcher": "\\.module\\.s?css$",
+        "goToDefinition": true
+      }
+    }
+  ]
+}
