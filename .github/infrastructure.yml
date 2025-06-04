@@ -24,14 +24,13 @@ branches:
           - context: artifacts
           - context: auto-merge
           - context: auto-review
-          - context: changelog
           - context: commitlint
-          - context: container
           - context: format
           - context: lint
           - context: spelling
           - context: test
           - context: typescript
+          - context: vercel
         strict: true
       restrictions: null
 environments:

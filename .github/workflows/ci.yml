@@ -351,7 +351,7 @@ jobs:
         with:
           name: ${{ steps.tarball.outputs.result }}
           path: ${{ steps.tarball.outputs.result }}
-  preview:
+  vercel:
     needs:
       - artifacts
       - commitlint
