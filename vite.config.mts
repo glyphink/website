@@ -55,7 +55,7 @@ function config(this: void, env: ConfigEnv): UserConfig {
   const THEME_ROOT: string = pathe.resolve('src/client/theme')
 
   return {
-    assetsInclude: [pathe.join(THEME_ROOT, 'fonts', '**')],
+    assetsInclude: [pathe.join(THEME_ROOT, 'assets', '**')],
     build: {
       chunkSizeWarningLimit: 600,
       cssCodeSplit: true,

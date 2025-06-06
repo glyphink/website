@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h1>) 1`] = `
+<h1>
+  heading 1
+</h1>
+`;
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h2>) 1`] = `
+<h2>
+  heading 2
+</h2>
+`;
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h3>) 1`] = `
+<h3>
+  heading 3
+</h3>
+`;
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h4>) 1`] = `
+<h4>
+  heading 4
+</h4>
+`;
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h5>) 1`] = `
+<h5>
+  heading 5
+</h5>
+`;
+
+exports[`unit:theme/components/atoms/Heading > should render heading element (<h6>) 1`] = `
+<h6>
+  heading 6
+</h6>
+`;
