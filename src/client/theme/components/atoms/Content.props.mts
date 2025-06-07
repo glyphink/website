@@ -8,6 +8,8 @@ import type { BoxProps } from '@glyphink/website/theme'
 /**
  * Content component props.
  *
+ * @see {@linkcode BoxProps}
+ *
  * @extends {BoxProps}
  */
 interface ContentProps extends BoxProps {

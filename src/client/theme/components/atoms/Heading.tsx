@@ -1,6 +1,6 @@
 /**
  * @file Atoms - Heading
- * @module website/components/atoms/Heading/component
+ * @module website/components/atoms/Heading
  */
 
 import type { Props } from '@glyphink/website/theme'
@@ -18,11 +18,12 @@ import type HeadingProps from './Heading.props.mts'
  *
  * Use `props.size` to change the heading level.
  *
- * - https://developer.mozilla.org/docs/Web/HTML/Element/Heading_Elements
- * - https://developer.mozilla.org/docs/Web/API/HTMLHeadingElement
- *
+ * @see https://developer.mozilla.org/docs/Web/HTML/Element/Heading_Elements
  * @see {@linkcode ForwardRefExoticComponent}
  * @see {@linkcode HeadingProps}
+ *
+ * @category
+ *  atoms
  *
  * @const {ForwardRefExoticComponent<HeadingProps>} Heading
  */

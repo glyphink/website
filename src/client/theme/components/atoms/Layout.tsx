@@ -15,7 +15,12 @@ import type LayoutProps from './Layout.props.mts'
 /**
  * Page layout.
  *
+ * @see {@linkcode FC}
  * @see {@linkcode LayoutProps}
+ * @see {@linkcode Props}
+ *
+ * @category
+ *  atoms
  *
  * @type {FC<LayoutProps>}
  *

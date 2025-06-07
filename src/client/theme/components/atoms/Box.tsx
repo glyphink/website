@@ -15,10 +15,12 @@ import type BoxProps from './Box.props.mts'
 /**
  * A `<div>` element.
  *
- * - https://developer.mozilla.org/docs/Web/API/HTMLDivElement
- *
+ * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div
  * @see {@linkcode BoxProps}
  * @see {@linkcode ForwardRefExoticComponent}
+ *
+ * @category
+ *  atoms
  *
  * @const {ForwardRefExoticComponent<BoxProps>} Box
  */

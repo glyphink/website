@@ -13,12 +13,14 @@ import {
 import type SectionProps from './Section.props.mts'
 
 /**
- * A `<section>` element.
+ * A standalone section.
  *
- * - https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/section
- *
+ * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/section
  * @see {@linkcode ForwardRefExoticComponent}
  * @see {@linkcode SectionProps}
+ *
+ * @category
+ *  atoms
  *
  * @const {ForwardRefExoticComponent<SectionProps>} Section
  */

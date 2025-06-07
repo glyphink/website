@@ -6,12 +6,7 @@
 import type { Props } from '@glyphink/website/theme'
 import cx from 'classnames'
 import { ok } from 'devlop'
-import {
-  forwardRef,
-  type ForwardedRef,
-  type ForwardRefExoticComponent,
-  type JSX
-} from 'react'
+import type { FC, JSX } from 'react'
 import Box from './Box'
 import classes from './Content.module.scss'
 import type ContentProps from './Content.props.mts'
@@ -20,38 +15,30 @@ import type ContentProps from './Content.props.mts'
  * Page content.
  *
  * @see {@linkcode ContentProps}
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FC}
+ * @see {@linkcode Props}
  *
- * @const {ForwardRefExoticComponent<ContentProps>} Content
+ * @category
+ *  atoms
+ *
+ * @type {FC<ContentProps>}
+ *
+ * @param {Props<ContentProps>} props
+ *  Component props
+ * @return {JSX.Element}
+ *  `Box` element
  */
-const Content: ForwardRefExoticComponent<ContentProps> = forwardRef<
-  HTMLDivElement,
-  ContentProps
->(
-  /**
-   * @param {Props<ContentProps>} props
-   *  Component props
-   * @param {ForwardedRef<HTMLDivElement>} ref
-   *  Forwarded ref
-   * @return {JSX.Element}
-   *  `Box` element
-   */
-  (
-    props: Props<ContentProps>,
-    ref: ForwardedRef<HTMLDivElement>
-  ): JSX.Element => {
-    ok(classes.content, 'expected `classes.content`')
+const Content: FC<ContentProps> = (props: Props<ContentProps>): JSX.Element => {
+  ok(classes.content, 'expected `classes.content`')
 
-    return (
-      <Box
-        {...props}
-        className={cx(classes.content, props.className)}
-        id='content'
-        ref={ref}
-      />
-    )
-  }
-)
+  return (
+    <Box
+      {...props}
+      className={cx(classes.content, props.className)}
+      id='content'
+    />
+  )
+}
 
 Content.displayName = 'Content'
 
