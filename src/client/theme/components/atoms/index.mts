@@ -5,6 +5,8 @@
 
 export type { default as BoxProps } from './Box.props.mts'
 export { default as Box } from './Box.tsx'
+export type { default as BreakProps } from './Break.props.mts'
+export { default as Break } from './Break.tsx'
 export type { default as ContentProps } from './Content.props.mts'
 export { default as Content } from './Content.tsx'
 export type { default as HeadingProps } from './Heading.props.mts'
