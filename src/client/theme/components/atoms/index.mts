@@ -10,6 +10,10 @@ export { default as Break } from './Break.tsx'
 export type { default as ContentProps } from './Content.props.mts'
 export { default as Content } from './Content.tsx'
 export type {
+  default as DescriptionDetailsProps
+} from './DescriptionDetails.props.mts'
+export { default as DescriptionDetails } from './DescriptionDetails.tsx'
+export type {
   default as DescriptionListProps
 } from './DescriptionList.props.mts'
 export { default as DescriptionList } from './DescriptionList.tsx'

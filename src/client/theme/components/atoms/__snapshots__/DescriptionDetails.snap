@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:theme/components/atoms/DescriptionDetails > should render <dd> 1`] = `
+<dd>
+  A large feline inhabiting Bodmin Moor.
+</dd>
+`;
