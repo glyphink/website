@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type BoxProps from './Box.props.mts'
@@ -17,17 +17,14 @@ import type BoxProps from './Box.props.mts'
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div
  * @see {@linkcode BoxProps}
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<BoxProps>} Box
+ * @const {FRC<BoxProps>} Box
  */
-const Box: ForwardRefExoticComponent<BoxProps> = forwardRef<
-  HTMLDivElement,
-  BoxProps
->(
+const Box: FRC<BoxProps> = forwardRef<HTMLDivElement, BoxProps>(
   /**
    * @param {Props<BoxProps>} props
    *  Component props

@@ -8,7 +8,7 @@ import {
   createElement,
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type HeadingProps from './Heading.props.mts'
@@ -19,18 +19,15 @@ import type HeadingProps from './Heading.props.mts'
  * Use `props.size` to change the heading level.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Element/Heading_Elements
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode HeadingProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<HeadingProps>} Heading
+ * @const {FRC<HeadingProps>} Heading
  */
-const Heading: ForwardRefExoticComponent<HeadingProps> = forwardRef<
-  HTMLHeadingElement,
-  HeadingProps
->(
+const Heading: FRC<HeadingProps> = forwardRef<HTMLHeadingElement, HeadingProps>(
   /**
    * @param {Props<HeadingProps>} props
    *  Component props

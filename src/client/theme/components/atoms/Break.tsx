@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type BreakProps from './Break.props.mts'
@@ -17,17 +17,14 @@ import type BreakProps from './Break.props.mts'
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/br
  * @see {@linkcode BreakProps}
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<BreakProps>} Break
+ * @const {FRC<BreakProps>} Break
  */
-const Break: ForwardRefExoticComponent<BreakProps> = forwardRef<
-  HTMLBRElement,
-  BreakProps
->(
+const Break: FRC<BreakProps> = forwardRef<HTMLBRElement, BreakProps>(
   /**
    * @param {Props<BreakProps>} props
    *  Component props

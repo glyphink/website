@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type SectionProps from './Section.props.mts'
@@ -16,18 +16,15 @@ import type SectionProps from './Section.props.mts'
  * A standalone section.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/section
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode SectionProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<SectionProps>} Section
+ * @const {FRC<SectionProps>} Section
  */
-const Section: ForwardRefExoticComponent<SectionProps> = forwardRef<
-  HTMLElement,
-  SectionProps
->(
+const Section: FRC<SectionProps> = forwardRef<HTMLElement, SectionProps>(
   /**
    * @param {Props<SectionProps>} props
    *  Component props

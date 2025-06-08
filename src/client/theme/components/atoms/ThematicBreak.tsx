@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type ThematicBreakProps from './ThematicBreak.props.mts'
@@ -16,15 +16,15 @@ import type ThematicBreakProps from './ThematicBreak.props.mts'
  * A thematic break.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/hr
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode ThematicBreakProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<ThematicBreakProps>} ThematicBreak
+ * @const {FRC<ThematicBreakProps>} ThematicBreak
  */
-const ThematicBreak: ForwardRefExoticComponent<ThematicBreakProps> = forwardRef<
+const ThematicBreak: FRC<ThematicBreakProps> = forwardRef<
   HTMLHRElement,
   ThematicBreakProps
 >(

@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type MainProps from './Main.props.mts'
@@ -20,18 +20,15 @@ import type MainProps from './Main.props.mts'
  * an application.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/main
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode MainProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<MainProps>} Main
+ * @const {FRC<MainProps>} Main
  */
-const Main: ForwardRefExoticComponent<MainProps> = forwardRef<
-  HTMLElement,
-  MainProps
->(
+const Main: FRC<MainProps> = forwardRef<HTMLElement, MainProps>(
   /**
    * @param {Props<MainProps>} props
    *  Component props

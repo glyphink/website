@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type ParagraphProps from './Paragraph.props.mts'
@@ -16,15 +16,15 @@ import type ParagraphProps from './Paragraph.props.mts'
  * A paragraph.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/p
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode ParagraphProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<ParagraphProps>} Paragraph
+ * @const {FRC<ParagraphProps>} Paragraph
  */
-const Paragraph: ForwardRefExoticComponent<ParagraphProps> = forwardRef<
+const Paragraph: FRC<ParagraphProps> = forwardRef<
   HTMLParagraphElement,
   ParagraphProps
 >(

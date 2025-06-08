@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type HeadingGroupProps from './HeadingGroup.props.mts'
@@ -16,15 +16,15 @@ import type HeadingGroupProps from './HeadingGroup.props.mts'
  * A heading and related content.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/hgroup
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode HeadingGroupProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<HeadingGroupProps>} HeadingGroup
+ * @const {FRC<HeadingGroupProps>} HeadingGroup
  */
-const HeadingGroup: ForwardRefExoticComponent<HeadingGroupProps> = forwardRef<
+const HeadingGroup: FRC<HeadingGroupProps> = forwardRef<
   HTMLElement,
   HeadingGroupProps
 >(

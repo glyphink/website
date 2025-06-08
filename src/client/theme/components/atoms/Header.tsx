@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type HeaderProps from './Header.props.mts'
@@ -16,18 +16,15 @@ import type HeaderProps from './Header.props.mts'
  * Introductory content.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/header
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode HeaderProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<HeaderProps>} Header
+ * @const {FRC<HeaderProps>} Header
  */
-const Header: ForwardRefExoticComponent<HeaderProps> = forwardRef<
-  HTMLElement,
-  HeaderProps
->(
+const Header: FRC<HeaderProps> = forwardRef<HTMLElement, HeaderProps>(
   /**
    * @param {Props<HeaderProps>} props
    *  Component props

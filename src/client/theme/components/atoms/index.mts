@@ -9,6 +9,10 @@ export type { default as BreakProps } from './Break.props.mts'
 export { default as Break } from './Break.tsx'
 export type { default as ContentProps } from './Content.props.mts'
 export { default as Content } from './Content.tsx'
+export type {
+  default as DescriptionListProps
+} from './DescriptionList.props.mts'
+export { default as DescriptionList } from './DescriptionList.tsx'
 export type { default as HeaderProps } from './Header.props.mts'
 export { default as Header } from './Header.tsx'
 export type { default as HeadingProps } from './Heading.props.mts'

@@ -7,7 +7,7 @@ import type { Props } from '@glyphink/website/theme'
 import {
   forwardRef,
   type ForwardedRef,
-  type ForwardRefExoticComponent,
+  type FRC,
   type JSX
 } from 'react'
 import type SpanProps from './Span.props.mts'
@@ -16,18 +16,15 @@ import type SpanProps from './Span.props.mts'
  * A generic inline container for phrasing content.
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span
- * @see {@linkcode ForwardRefExoticComponent}
+ * @see {@linkcode FRC}
  * @see {@linkcode SpanProps}
  *
  * @category
  *  atoms
  *
- * @const {ForwardRefExoticComponent<SpanProps>} Span
+ * @const {FRC<SpanProps>} Span
  */
-const Span: ForwardRefExoticComponent<SpanProps> = forwardRef<
-  HTMLSpanElement,
-  SpanProps
->(
+const Span: FRC<SpanProps> = forwardRef<HTMLSpanElement, SpanProps>(
   /**
    * @param {Props<SpanProps>} props
    *  Component props

@@ -10,6 +10,7 @@ hmarr
 jchen
 jsxdev
 kaisugi
+morgawr
 mpath
 nvmrc
 shfmt
