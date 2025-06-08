@@ -5,6 +5,7 @@
 
 import type { JsonPrimitive } from '@flex-development/tutils'
 import type {
+  AriaAttributes,
   AriaRole,
   AutoCapitalize,
   Element,
@@ -14,7 +15,6 @@ import type {
 } from '@glyphink/website/theme'
 import type {
   AllHTMLAttributes,
-  AriaAttributes,
   DOMAttributes,
   HTMLAttributes,
   RefAttributes
@@ -28,7 +28,10 @@ import type {
  *
  * @see https://developer.mozilla.org/docs/Web/HTML/Global_attributes
  * @see https://developer.mozilla.org/docs/Web/HTML/Attributes
+ * @see {@linkcode AriaAttributes}
+ * @see {@linkcode DOMAttributes}
  * @see {@linkcode Element}
+ * @see {@linkcode RefAttributes}
  *
  * @template {Element} [E=Element]
  *  HTML or SVG element

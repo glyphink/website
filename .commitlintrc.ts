@@ -15,7 +15,8 @@ import { max, parserPreset, scopes } from '@flex-development/commitlint-config'
 const scopeList: string[] = scopes([
   'chore',
   'theme',
-  'theme/components'
+  'theme/components',
+  'theme/interfaces'
 ])
 
 /**

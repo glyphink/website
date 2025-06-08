@@ -5,6 +5,7 @@
 
 import type { JsonPrimitive, Optional } from '@flex-development/tutils'
 import type {
+  AriaAttributes,
   AriaRole,
   AutoCapitalize,
   Element,
@@ -12,11 +13,7 @@ import type {
   HtmlElements,
   InputMode
 } from '@glyphink/website/theme'
-import type {
-  AriaAttributes,
-  DOMAttributes,
-  RefAttributes
-} from 'react'
+import type { DOMAttributes, RefAttributes } from 'react'
 import type TestSubject from '../global-attributes.mts'
 
 describe('unit-d:theme/interfaces/GlobalAttributes', () => {

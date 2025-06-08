@@ -2,6 +2,7 @@ booleanish
 cefc
 commitlintrc
 dedupe
+describedby
 devlop
 fbca
 fldv
@@ -10,6 +11,7 @@ hmarr
 jchen
 jsxdev
 kaisugi
+labelledby
 morgawr
 mpath
 nvmrc
