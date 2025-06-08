@@ -3,7 +3,19 @@
 exports[`unit:theme/components/atoms/HeadingGroup > should render <hgroup> 1`] = `
 <hgroup>
   <h1>
-    Hello, world 🌎👋
+    Hello, world 
+    <span
+      aria-label="world emoji"
+      role="img"
+    >
+      🌎
+    </span>
+    <span
+      aria-label="wave emoji"
+      role="img"
+    >
+      👋
+    </span>
   </h1>
   <p>
     The quick brown fox jumped over the lazy dog

@@ -3,6 +3,8 @@
  * @module website/theme/components/atoms
  */
 
+export type { default as AnchorProps } from './Anchor.props.mts'
+export { default as Anchor } from './Anchor.tsx'
 export type { default as BoxProps } from './Box.props.mts'
 export { default as Box } from './Box.tsx'
 export type { default as BreakProps } from './Break.props.mts'

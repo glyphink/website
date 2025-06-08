@@ -7,6 +7,7 @@
 import fldv from '@flex-development/eslint-config'
 import html from '@html-eslint/eslint-plugin'
 import htmlParser from '@html-eslint/parser'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
@@ -84,10 +85,98 @@ export default [
   {
     files: ['**/*.tsx'],
     plugins: {
+      /** @type {import('eslint').ESLint.Plugin} */
+      // @ts-expect-error exact optional property types (2375).
+      'jsx-a11y': jsxA11y,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh
     },
     rules: {
+      'jsx-a11y/accessible-emoji': 2,
+      'jsx-a11y/alt-text': [
+        2,
+        {
+          elements: ['img', 'input[type="image"]'],
+          img: ['Image', 'ImageInput']
+        }
+      ],
+      'jsx-a11y/anchor-ambiguous-text': 2,
+      'jsx-a11y/anchor-has-content': [2, { components: ['Anchor'] }],
+      'jsx-a11y/anchor-is-valid': [
+        2,
+        {
+          aspects: ['invalidHref', 'noHref', 'preferButton'],
+          components: ['Anchor'],
+          specialLink: []
+        }
+      ],
+      'jsx-a11y/aria-activedescendant-has-tabindex': 2,
+      'jsx-a11y/aria-props': 2,
+      'jsx-a11y/aria-proptypes': 2,
+      'jsx-a11y/aria-role': 2,
+      'jsx-a11y/aria-unsupported-elements': 2,
+      'jsx-a11y/autocomplete-valid': [2, { inputComponents: ['Input'] }],
+      'jsx-a11y/click-events-have-key-events': 2,
+      'jsx-a11y/heading-has-content': [2, { components: ['Heading'] }],
+      'jsx-a11y/html-has-lang': 2,
+      'jsx-a11y/iframe-has-title': 2,
+      'jsx-a11y/img-redundant-alt': [2, { components: ['Image'] }],
+      'jsx-a11y/interactive-supports-focus': 2,
+      'jsx-a11y/label-has-associated-control': [
+        2,
+        {
+          controlComponents: ['Input'],
+          depth: 0,
+          labelComponents: ['Label']
+        }
+      ],
+      'jsx-a11y/lang': 2,
+      'jsx-a11y/media-has-caption': [
+        2,
+        {
+          audio: ['Audio'],
+          track: ['Track'],
+          video: ['Video']
+        }
+      ],
+      'jsx-a11y/mouse-events-have-key-events': 2,
+      'jsx-a11y/no-access-key': 2,
+      'jsx-a11y/no-autofocus': 2,
+      'jsx-a11y/no-distracting-elements': 2,
+      'jsx-a11y/no-interactive-element-to-noninteractive-role': 2,
+      'jsx-a11y/no-noninteractive-element-interactions': [
+        2,
+        {
+          handlers: [
+            'onClick',
+            'onKeyDown',
+            'onKeyPress',
+            'onKeyUp',
+            'onMouseDown',
+            'onMouseUp'
+          ]
+        }
+      ],
+      'jsx-a11y/no-noninteractive-element-to-interactive-role': 2,
+      'jsx-a11y/no-noninteractive-tabindex': 2,
+      'jsx-a11y/no-redundant-roles': 2,
+      'jsx-a11y/no-static-element-interactions': [
+        2,
+        {
+          handlers: [
+            'onClick',
+            'onKeyDown',
+            'onKeyPress',
+            'onKeyUp',
+            'onMouseDown',
+            'onMouseUp'
+          ]
+        }
+      ],
+      'jsx-a11y/role-has-required-aria-props': 2,
+      'jsx-a11y/role-supports-aria-props': 2,
+      'jsx-a11y/scope': 2,
+      'jsx-a11y/tabindex-no-positive': 2,
       'react/boolean-prop-naming': 0,
       'react/button-has-type': 2,
       'react/default-props-match-prop-types': 2,
@@ -228,6 +317,50 @@ export default [
       'unicorn/prefer-modern-dom-apis': 2,
       'unicorn/prefer-query-selector': 2,
       'unicorn/require-post-message-target-origin': 2
+    },
+    settings: {
+      'jsx-a11y': {
+        attributes: {
+          for: ['htmlFor', 'for']
+        },
+        components: {
+          Anchor: 'a',
+          Aside: 'aside',
+          Blockquote: 'blockquote',
+          Box: 'div',
+          Break: 'br',
+          Button: 'button',
+          Code: 'code',
+          DescriptionDetails: 'dd',
+          DescriptionList: 'dl',
+          DescriptionTerm: 'dt',
+          Details: 'details',
+          Dialog: 'dialog',
+          Fieldset: 'fieldset',
+          Figcaption: 'figcaption',
+          Figure: 'figure',
+          Footer: 'footer',
+          Form: 'form',
+          Header: 'header',
+          Heading: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+          HeadingGroup: 'hgroup',
+          Input: 'input',
+          List: ['ol', 'ul'],
+          ListItem: 'li',
+          Main: 'main',
+          Nav: 'nav',
+          Option: 'option',
+          OptionGroup: 'optgroup',
+          Paragraph: 'p',
+          Quote: 'q',
+          Section: 'section',
+          Select: 'select',
+          Span: 'span',
+          Summary: 'summary',
+          ThematicBreak: 'hr',
+          Video: 'video'
+        }
+      }
     }
   },
   {

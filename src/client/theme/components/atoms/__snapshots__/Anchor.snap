@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:theme/components/atoms/Anchor > should render <a> 1`] = `
+<a
+  href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a"
+  target="_self"
+>
+  &lt;a&gt;: The Anchor element
+</a>
+`;

@@ -13,7 +13,11 @@ describe('unit:theme/components/atoms/HeadingGroup', () => {
     const props: HeadingGroupProps = {
       children: (
         <>
-          <h1>Hello, world 🌎👋</h1>
+          <h1>
+            {'Hello, world '}
+            <span aria-label='world emoji' role='img'>🌎</span>
+            <span aria-label='wave emoji' role='img'>👋</span>
+          </h1>
           <p>The quick brown fox jumped over the lazy dog</p>
         </>
       )
