@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:theme/components/atoms/DescriptionTerm > should render <dt> 1`] = `
+<dt>
+  Beast of Bodmin
+</dt>
+`;

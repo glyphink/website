@@ -13,6 +13,10 @@ export type {
   default as DescriptionListProps
 } from './DescriptionList.props.mts'
 export { default as DescriptionList } from './DescriptionList.tsx'
+export type {
+  default as DescriptionTermProps
+} from './DescriptionTerm.props.mts'
+export { default as DescriptionTerm } from './DescriptionTerm.tsx'
 export type { default as HeaderProps } from './Header.props.mts'
 export { default as Header } from './Header.tsx'
 export type { default as HeadingProps } from './Heading.props.mts'
