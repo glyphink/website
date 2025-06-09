@@ -23,6 +23,10 @@ export type {
   default as DescriptionTermProps
 } from './DescriptionTerm.props.mts'
 export { default as DescriptionTerm } from './DescriptionTerm.tsx'
+export type { default as FigcaptionProps } from './Figcaption.props.mts'
+export { default as Figcaption } from './Figcaption.tsx'
+export type { default as FigureProps } from './Figure.props.mts'
+export { default as Figure } from './Figure.tsx'
 export type { default as HeaderProps } from './Header.props.mts'
 export { default as Header } from './Header.tsx'
 export type { default as HeadingProps } from './Heading.props.mts'
