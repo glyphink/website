@@ -1823,9 +1823,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/log@npm:5.0.0-alpha.2":
-  version: 5.0.0-alpha.2
-  resolution: "@flex-development/log@npm:5.0.0-alpha.2"
+"@flex-development/log@npm:5.0.0-alpha.3":
+  version: 5.0.0-alpha.3
+  resolution: "@flex-development/log@npm:5.0.0-alpha.3"
   dependencies:
     "@flex-development/colors": "npm:1.0.2"
     "@flex-development/is-unicode-supported": "npm:1.0.1"
@@ -1834,7 +1834,7 @@ __metadata:
     devlop: "npm:1.1.0"
     node-inspect-extracted: "npm:3.1.0"
     string-width: "npm:7.2.0"
-  checksum: 10/f49ce981d21a0ce8501c0d8a783868274e1b93f41a6fdd4662c9d0fb73af25dd216db88ed8d3f203ef67c091dbba727a0aaae982b4a375a11235a3d8bad1f23f
+  checksum: 10/eba8958983dc0eb8066f09b2c1b226fd2f6f62eed2b3499537e5e0a4a02cdabd0ed5dee2d3112b2dafe572104ddf7d90588c970524f7e74c6bda605b0031a9eb
   languageName: node
   linkType: hard
 
@@ -2195,7 +2195,7 @@ __metadata:
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/eslint-config": "npm:1.1.1"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
-    "@flex-development/log": "npm:5.0.0-alpha.2"
+    "@flex-development/log": "npm:5.0.0-alpha.3"
     "@flex-development/pathe": "npm:4.0.2"
     "@flex-development/remark-preset": "npm:1.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.25"
