@@ -125,7 +125,7 @@
     "typescript": "5.8.3",
     "typescript-plugin-css-modules": "5.1.0",
     "unified": "11.0.5",
-    "vercel": "43.0.0",
+    "vercel": "43.1.0",
     "vfile": "6.0.3",
     "vite": "6.3.5",
     "vitest": "3.2.3"
