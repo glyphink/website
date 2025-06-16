@@ -2248,7 +2248,7 @@ __metadata:
     typescript: "npm:5.8.3"
     typescript-plugin-css-modules: "npm:5.1.0"
     unified: "npm:11.0.5"
-    vercel: "npm:43.1.0"
+    vercel: "npm:43.2.0"
     vfile: "npm:6.0.3"
     vite: "npm:6.3.5"
     vitest: "npm:3.2.3"
@@ -14410,9 +14410,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:43.1.0":
-  version: 43.1.0
-  resolution: "vercel@npm:43.1.0"
+"vercel@npm:43.2.0":
+  version: 43.2.0
+  resolution: "vercel@npm:43.2.0"
   dependencies:
     "@vercel/blob": "npm:1.0.2"
     "@vercel/build-utils": "npm:10.6.1"
@@ -14431,7 +14431,7 @@ __metadata:
   bin:
     vc: dist/vc.js
     vercel: dist/vc.js
-  checksum: 10/afd8b6c20e7d3d0d7815161e3bb12b85b71bba70181bfcdce16eae0f5a5a0788c108833545bfb59edd5b9adf4221a7814715a6ac87a36863190188eaefe80250
+  checksum: 10/a05aafcdd962b0306e2d877cbd8e76e5b3b9acaca7ca43c61327bf39557cd5cf96e5feddfa6da87a6e5ffcfbd6554bd1e2f69dac5d8ad9ae824c22ecdc24f087
   languageName: node
   linkType: hard
 
