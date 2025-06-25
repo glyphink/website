@@ -86,7 +86,7 @@
     "@types/chai-dom": "1.11.3",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/is-ci": "3.0.4",
-    "@types/node": "22.15.29",
+    "@types/node": "24.0.4",
     "@types/node-notifier": "8.0.5",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
